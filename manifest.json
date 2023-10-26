@@ -1,0 +1,35 @@
+{
+    "name": "mailXtend",
+    "description": "Enter your subject line and have AI write your email template for you!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "48": "assets/48.png",
+        "72": "assets/72.png",
+        "96": "assets/96.png",
+        "144": "assets/144.png"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Generate email"
+    },
+    "background": {
+        "service_worker": "scripts/contextMenuServiceWorker.js"
+    },
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "scripts/content.js"
+            ]
+        }
+    ]
+}
