@@ -1,5 +1,5 @@
 # About
-Created a chrome extension for generation of an email in Gmail and Outlook.Using OpenAi API this extension will helps to provide email templates based on selected sunject line. 
+Created a chrome extension for generation of an email in Gmail and Outlook.Using OpenAi API this extension will helps to provide email templates based on selected subject line. 
 
 # Screenshots
 
